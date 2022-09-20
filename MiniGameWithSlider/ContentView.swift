@@ -19,7 +19,7 @@ struct ContentView: View {
             Button("Получить результат") {
                 alertIsPresented = true
             }
-            .alert("Результат", isPresented: $alertIsPresented) {} message: {
+            .alert("Результат", isPresented: $alertIsPresented, actions: {}) {
                 Text("Ваш результат - \(computeScore())")
             }
             
